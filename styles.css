@@ -1,0 +1,242 @@
+/* =========== reset ========= */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(228, 240, 241);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1240px;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10rem;
+    position: relative;
+}
+h1{
+    text-align: center;
+    background-color: rgba(12, 24, 27, 0.904);
+    padding: .3em;
+    color: rgb(164, 167, 179);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.836);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: cursive;
+}
+.img{
+    position: absolute;
+    top: -7rem;
+    left: 5rem;
+}
+.img img{
+    width: 350px;
+    height: 350px;
+    margin-left: 2rem;
+    border-radius: 100%;
+    border: 7px solid rgb(228, 240, 241);
+}
+.info{
+    position: relative;
+    background: rgba(8, 34, 43, 0.938);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em;
+    margin-top: 3rem;
+}
+.info-details{
+    position: absolute;
+    right: 5rem;
+    margin-left: 5rem;
+}
+.info-details h2{
+    font-size: 2.8rem;
+    margin-bottom: .7rem;
+    color: orange;
+}
+.style{
+    color: rgb(226, 215, 215);
+}
+.info-details p{
+    font-size: 1.2rem;
+    color: rgba(177, 166, 166, 0.918);
+    width: 48ch;
+    line-height: 1.6rem;
+}
+button{
+    width: 10rem;
+    margin-top: .7rem;
+    color: white;
+    padding: .9em;
+    background-color: orange;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.836);
+    font-size: 1rem;
+    border: none;
+}
+
+.timeline{
+    background-color:  rgb(74, 108, 119);
+    height: 700px;
+    width: 570px;
+    position: relative;
+    top: -8rem;
+    left: 2rem;
+}
+.disp{
+    display: flex;
+}
+.img-disp{
+    display: flex;
+    margin: 4rem 3rem 0 auto;
+    position: relative;
+}
+.img-disp img{
+    width: 250px;
+    height: 350px;
+}
+.img-disp img:nth-last-of-type(1){
+    position: absolute;
+    top: 4rem;
+    right: 15rem;
+    margin-right: 2rem;
+    width: 270px;
+}
+.caption{
+    background-color: rgba(12, 24, 27, 0.904);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    margin-top: 0;
+    color: orange;
+}
+/* =====Media Queries==== */
+@media (max-width:1240px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    .container{
+        max-width: 967px;
+        padding-inline: 1em;
+    }
+    .img{
+        left: 2rem;
+        top: -8rem;
+    }
+    .img img{
+        height: 300px;
+        width: 300px;     
+    }
+    .info{
+        height: 350px;
+    }
+    .info-details{
+        right: 2rem;
+    }
+    .info-details p{
+        font-size: 1.1rem;
+        width: 42ch;
+        line-height: 1.5rem;
+    }
+    .info-details h2{
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+    .timeline{
+        width: 480px;
+        top: -9rem;
+        left: 1rem;      
+    }
+    .img-disp{
+        margin-right: 1rem;
+    }
+    .img-disp img{
+        width: 200px;
+        height: 300px;
+    }
+    .img-disp img:nth-last-of-type(1){
+        top: 4rem;
+        right: 11rem;
+        margin-right: 2rem;
+        width: 220px;
+    }
+}
+@media (max-width:967px) {
+    h1{
+        font-size: 2rem;
+    }
+    .container{
+        max-width: 900px;
+    }   
+    .img{
+        top: -6rem;
+        left: 1rem;
+    }
+    .img img{
+        height: 280px;
+        width: 280px;     
+    }
+    .info{
+        height: 350px;
+    }
+    .info-details{
+        right: 2rem;
+    }
+    .info-details p{
+        font-size: 1.1rem;
+        width: 38ch;
+        line-height: 1.5rem;
+    }
+    .info-details h2{
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+}
+@media (max-width:950px) {
+    .container{
+        max-width: 800px;
+    }
+    .info{
+        width: 100%;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        top: -8rem;
+        margin-left: 40%;
+        transform: translateX(-40%);
+    }
+    .info-details{
+        top: 30%;
+        right: 4rem;
+        text-align: center;
+    }
+    .info-details p{
+        width: auto;
+    }
+    .disp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline{
+        width: 600px;
+        top: -6rem;
+        left: 0;
+    }
+    .img-disp{
+        display: none;
+    }
+}
